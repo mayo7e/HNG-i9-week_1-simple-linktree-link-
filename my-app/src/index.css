@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding:10px;
+    padding: 60px 112px;
     font-size: 18px;
     
 }
@@ -10,14 +10,81 @@ body {
     /* width: 90%; */
     border: 2px solid green;
 }
+
+
+
+/* ====================
+Profile_Sectiion_Start
+=======================*/
+
+#header_profile{
+    
+    border: 5px solid red;
+}
+
+#profile_img{
+    border-radius: 50%;
+    width: 88px;
+    
+}
+
+
+
+
+/* ====================
+Profile_Sectiion_End
+=======================*/
+
+
+
+/* ====================
+main_Sectiion_Start
+=======================*/
+
+main{
+    border: 2px solid green;
+    /* padding: 0; */
+}
+
+ul{
+    padding: 0 32px;
+}
+
 li {
     border: 2px solid;
-    padding: 20px 0;
+    padding: 20px;
     margin-bottom: 15px;
+
     list-style-type: none;
-    /* height: 76px; */
+    
 }
 a{
     text-decoration: none;
+    
 }
+
+.sm_section{
+    border:2px solid red;
+    display: flex;
+    /* margin-top: 48px; */
+    justify-content: center;
+    padding: 24px 0;
+    margin-bottom: 42px;
+}
+
+#slack_logo,
+#fithub_logo{
+    width:24px;
+    margin-right: 24px;
+    margin-left: -24px;
+}
+
+
+
+/* ====================
+main_Sectiion_End
+=======================*/
+
+
+
 
