@@ -4,21 +4,87 @@ import slack from "../assets/slack.png"
 
 
 
+
+
 export default function Main (){
+
+    
+   
+
+
+
                     return(
                         <main>
-                            <ul>
-                            <li> <a   rel="noreferrer"  href="https://twitter.com/MayowaWn">Twitter Link</a></li>
-                            <li> <a id="btn_zuri" target="_blank" rel="noreferrer"  href="https://training.zuri.team/">Zuri Teams</a></li>
-                            <li> <a id="books" target="_blank" rel="noreferrer"  href="https://twitter.com/MayowaWn">Zuri Books</a></li>
-                            <li> <a id="book_python" target="_blank" rel="noreferrer"  href="https://books.zuri.team/python-for-beginners?ref_id=mayowaade">Python Books</a></li>
-                            <li> <a id="pitch" target="_blank" rel="noreferrer"  href="https://background.zuri.team">Background Checks for coders</a></li>
-                            <li> <a id="book_design" target="_blank" rel="noreferrer"  href="https://books.zuri.team/design-rules">Design Books</a></li>
-                            </ul>
-                            <div  className="sm_section" >
-                                <img id="slack_logo" src={slack} alt="slack's logo" />
-                                <img id="github_logo" src={github} alt="github's" />
-                            </div>
-                        </main>
+                            
+                            <a id="twitter_link" class="tooltip"  target="_blank" rel="noreferrer" 
+                                    href="https://twitter.com/MayowaWn">
+                                    <li> Twitter Link</li>
+                                    <span>CSS tooltip showing up when your mouse over the link</span>
+                                    </a>
+
+
+                                         
+
+                                <a id="btn_zuri" class="tooltip" target="_blank" rel="noreferrer"  
+                                    href="https://training.zuri.team/">
+                                        <li> Zuri Teamss</li>
+                                        <span>CSS tooltip showing up when your mouse over the link</span>
+                                        </a>
+                            
+                           
+
+                                <a id="books" class="tooltip" target="_blank" rel="noreferrer"  
+                                        href="https://twitter.com/MayowaWn">
+                                        <li> Zuri Books</li>
+                                        <span>CSS tooltip showing up when your mouse over the link</span>
+                                        </a>
+           
+                                  
+
+
+                                <a id="book_python" class="tooltip" target="_blank" rel="noreferrer" 
+                                        href="https://books.zuri.team/python-for-beginners?ref_id=mayowaade">
+                                        <li> Python Book</li>
+                                        <span>CSS tooltip showing up when your mouse over the link</span>
+                                        </a>
+                            
+                                   
+                        
+
+                                <a id="pitch" class="tooltip" target="_blank" rel="noreferrer" 
+                                        href="https://background.zuri.team">
+                                        <li>Background Checks for coders</li>
+                                        <span>CSS tooltip showing up when your mouse over the link</span>
+                                        </a>
+                                
+                                    
+                                
+                                
+
+                                <a id="book_design" class="tooltip" target="_blank" rel="noreferrer" 
+                                        href="https://books.zuri.team/design-rules">
+                                        <li> Design Books</li>
+                                        <span>CSS tooltip showing up when your mouse over the link</span>
+                                        </a>
+                            
+                                    
+                              
+
+
+
+                                <div  className="sm_section" >
+                                    <img id="slack_logo" src={slack} alt="slack's logo" />
+                                    <img id="github_logo" src={github} alt="github's" />
+                                </div>
+                            </main>
                         )
 }
+
+
+            // const Button = ({ onClick, children }) => {
+            //     return (
+            //     <button type="button" onClick={onClick}>
+            //         {children}
+            //     </button>
+            //     );
+            // };
