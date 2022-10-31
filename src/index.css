@@ -1,15 +1,22 @@
 body {
     margin: 0;
-    padding: 60px 112px;
+    padding: 60px 112px 0;
     font-size: 18px;
+    height: 100vh;
+    
     
 }
 
 .App{
     text-align: center;
-    /* width: 90%; */
-    border: 2px solid green;
 }
+
+/* ----Typography---Start---- */
+
+
+
+
+/* ----Typography---End---- */
 
 
 
@@ -17,10 +24,6 @@ body {
 Profile_Sectiion_Start
 =======================*/
 
-#header_profile{
-    
-    border: 5px solid red;
-}
 
 #profile_img{
     border-radius: 50%;
@@ -41,10 +44,7 @@ Profile_Sectiion_End
 main_Sectiion_Start
 =======================*/
 
-main{
-    border: 2px solid green;
-    /* padding: 0; */
-}
+
 
 ul{
     padding: 0 32px;
@@ -52,32 +52,62 @@ ul{
 
 li {
     border: 2px solid;
+    border-radius: 8px;
+    
     padding: 20px;
     margin-bottom: 15px;
 
     list-style-type: none;
-    
-}
-a{
-    text-decoration: none;
+    cursor: pointer;
     
 }
 
+
 .sm_section{
-    border:2px solid red;
+    
     display: flex;
-    /* margin-top: 48px; */
+    
     justify-content: center;
     padding: 24px 0;
     margin-bottom: 42px;
 }
 
-#slack_logo,
-#fithub_logo{
+#slack_logo
+{
     width:24px;
     margin-right: 24px;
     margin-left: -24px;
 }
+
+a{
+    text-decoration: none;
+    
+}
+
+a.tooltip {
+    border-bottom: 1px dashed;
+    text-decoration: none;
+  }
+  a.tooltip:hover {
+    cursor: help;
+    position: relative;
+  }
+  a.tooltip span {
+    display: none;
+  }
+  a.tooltip:hover span {
+    border: #666 2px dotted;
+    padding: 5px 20px 5px 5px;
+    display: block;
+    z-index: 80px;
+    background: #e3e3e3;
+    left: 100px;
+    margin: 15px;
+    width: 300px;
+    position: absolute;
+    top: 15px;
+    text-decoration: none;
+  }
 
 
 
@@ -86,5 +116,64 @@ main_Sectiion_End
 =======================*/
 
 
+/* ====================
+footer_Sectiion_Start
+=======================*/
 
+footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 96px;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+#footer_zuri-logo{
+    width: 180px;
+    height: 30px;
+}
+
+#footer_hng{
+    width:832px;
+    height:24px;
+
+}
+
+#footer_ingressive{
+    width:132px;
+    height:32px;
+
+}
+
+
+
+
+
+/* ====================
+footer_Sectiion_End
+=======================*/
+
+
+
+
+.container{
+    position: absolute;
+    top: 10%;
+    left: 23%;
+    width: 50%;
+    }
+    
+    .text{
+    display: inline;
+    width: 100%;
+    }
+    
+    .read-or-hide{
+    color: rgb(192,192,192);
+    cursor: pointer;
+    }
+    #box{
+    border: 2px solid red;
+    }
+    
 
