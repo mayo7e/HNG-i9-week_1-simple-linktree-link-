@@ -25,7 +25,7 @@ Profile_Sectiion_Start
 =======================*/
 
 
-#profile_img{
+#profile__img{
     border-radius: 50%;
     width: 88px;
     
@@ -172,6 +172,7 @@ footer_Sectiion_End
     color: rgb(192,192,192);
     cursor: pointer;
     }
+
     #box{
     border: 2px solid red;
     }
