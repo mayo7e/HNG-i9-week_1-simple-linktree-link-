@@ -4,7 +4,7 @@ body {
     font-size: 18px;
     height: 100vh;
     font-family: 'Inter', sans-serif;
-    
+    color: #101828;
     
 }
 
@@ -12,8 +12,16 @@ body {
     text-align: center;
 }
 
-/* ----Typography---Start---- */
 
+/* ----Typography---Start---- */
+ #twitter{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        
+
+}
 
 
 
@@ -101,7 +109,6 @@ Profile_Sectiion_Start
 }
 
 #avatar_share_button{
-    /* _Avatar share button */
 
 
 position: absolute;
@@ -110,15 +117,13 @@ height: 40px;
 left: 708px;
 top: -20px;
 
-/* Base/White */
 
 background: #FFFFFF;
-/* Gray/300 */
+
 
 border: 1px dashed #D0D5DD;
 border-radius: 20px;
 
-/* Inside auto layout */
 
 flex: none;
 order: 2;
@@ -144,15 +149,23 @@ ul{
 }
 
 li {
-    border: 2px solid;
+    border: 1px solid #eaecf0;
     border-radius: 8px;
+    background: #EAECF0;
+    color: #101828;
     
     padding: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 
     list-style-type: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
     cursor: pointer;
     
+}
+li:hover{
+ background: #c7c4c486;
 }
 
 
@@ -195,7 +208,7 @@ a.tooltip {
     padding: 5px 20px 5px 5px;
     display: block;
     z-index: 80px;
-    background: #e3e3e3;
+    background: #e3e3e394;
     left: 100px;
     margin: 15px;
     width: 300px;
@@ -233,7 +246,13 @@ footer{
 #footer_hng{
     width:832px;
     height:24px;
-
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+ 
+    color: #667085;
+    
 }
 
 #footer_ingressive{
