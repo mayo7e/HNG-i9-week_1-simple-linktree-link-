@@ -20,7 +20,7 @@ export default  function Profile(){
 
                 </div>
                     <p id="twitter" >MayowaWn </p>
-                    {/* <p id="slack" >Mayowa Ade</p> */}
+                     <p id="slack" >Mayo7e</p> 
 
                    <a href="#0" ><img  title="Share Link"alt="avatar share button" src={avatarShare} id="avatar_share_button" /></a>
 

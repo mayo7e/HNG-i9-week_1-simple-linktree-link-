@@ -34,11 +34,9 @@ Profile_Sectiion_Start
 =======================*/
 
 
-/* #profile__img{
-    border-radius: 50%;
-    width: 88px;
-    
-} */
+#slack{
+  display: none;
+}
 
 
 #header_profile {
