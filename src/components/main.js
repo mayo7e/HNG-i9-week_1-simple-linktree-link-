@@ -16,16 +16,15 @@ export default function Main (){
                     return(
                         <main>
                             
-                            <a id="twitter_link" class="tooltip"  target="_blank" rel="noreferrer" 
+                            <a id="twitter_link" target="_blank"  rel="noreferrer" 
                                     href="https://twitter.com/MayowaWn">
                                     <li> Twitter Link</li>
-                                    <span>CSS tooltip showing up when your mouse over the link</span>
                                     </a>
 
 
                                          
 
-                                <a id="btn_zuri" class="tooltip" target="_blank" rel="noreferrer"  
+                                <a id="btn__zuri" class="tooltip" target="_blank" rel="noreferrer"  
                                     href="https://training.zuri.team/">
                                         <li> Zuri Teamss</li>
                                         <span>CSS tooltip showing up when your mouse over the link</span>
@@ -42,7 +41,7 @@ export default function Main (){
                                   
 
 
-                                <a id="book_python" class="tooltip" target="_blank" rel="noreferrer" 
+                                <a id="book__python" class="tooltip" target="_blank" rel="noreferrer" 
                                         href="https://books.zuri.team/python-for-beginners?ref_id=mayowaade">
                                         <li> Python Book</li>
                                         <span>CSS tooltip showing up when your mouse over the link</span>
@@ -61,7 +60,7 @@ export default function Main (){
                                 
                                 
 
-                                <a id="book_design" class="tooltip" target="_blank" rel="noreferrer" 
+                                <a id="book__design" class="tooltip" target="_blank" rel="noreferrer" 
                                         href="https://books.zuri.team/design-rules">
                                         <li> Design Books</li>
                                         <span>CSS tooltip showing up when your mouse over the link</span>
@@ -81,10 +80,4 @@ export default function Main (){
 }
 
 
-            // const Button = ({ onClick, children }) => {
-            //     return (
-            //     <button type="button" onClick={onClick}>
-            //         {children}
-            //     </button>
-            //     );
-            // };
+          

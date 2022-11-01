@@ -3,7 +3,6 @@
 import Profile from "../components/profile.js"
 import Main from "../components/main.js"
 import Footer from "../components/footer.js"
-import Content from '../components/ReadMore.js'
 import '../index.css';
 
 function App() {
