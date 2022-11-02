@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/HNG-i9-week_1-simple-linktree-link-/static/css/main.f883dd94.css",
-    "main.js": "/HNG-i9-week_1-simple-linktree-link-/static/js/main.3be593e4.js",
-    "static/media/mayo.jpg": "/HNG-i9-week_1-simple-linktree-link-/static/media/mayo.0a329d9e051a07279a22.jpg",
-    "static/media/avatar-svgrepo.svg": "/HNG-i9-week_1-simple-linktree-link-/static/media/avatar-svgrepo.ead44d71cb1697cda1c7fd128abdbdcb.svg",
-    "index.html": "/HNG-i9-week_1-simple-linktree-link-/index.html",
-    "main.f883dd94.css.map": "/HNG-i9-week_1-simple-linktree-link-/static/css/main.f883dd94.css.map",
-    "main.3be593e4.js.map": "/HNG-i9-week_1-simple-linktree-link-/static/js/main.3be593e4.js.map"
+    "main.css": "/hngi9_week_01-_linktree/static/css/main.52b21356.css",
+    "main.js": "/hngi9_week_01-_linktree/static/js/main.6fae349f.js",
+    "static/media/mayo.jpg": "/hngi9_week_01-_linktree/static/media/mayo.0a329d9e051a07279a22.jpg",
+    "static/media/avatar-svgrepo.svg": "/hngi9_week_01-_linktree/static/media/avatar-svgrepo.ead44d71cb1697cda1c7fd128abdbdcb.svg",
+    "index.html": "/hngi9_week_01-_linktree/index.html",
+    "main.52b21356.css.map": "/hngi9_week_01-_linktree/static/css/main.52b21356.css.map",
+    "main.6fae349f.js.map": "/hngi9_week_01-_linktree/static/js/main.6fae349f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f883dd94.css",
-    "static/js/main.3be593e4.js"
+    "static/css/main.52b21356.css",
+    "static/js/main.6fae349f.js"
   ]
 }
