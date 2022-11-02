@@ -77,7 +77,8 @@ Profile_Sectiion_Start
   transition: .3s ease;
   border-radius: 50%;
 
-  background-color: rgb(136, 98, 98);
+  /* background-color: rgb(136, 98, 98); */
+  background-color: transparent;
 }
 
 #header_profile:hover .overlay {
