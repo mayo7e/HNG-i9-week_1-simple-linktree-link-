@@ -4,7 +4,7 @@ import mayo from "../assets/mayo.jpg"
 import avatar from "../assets/avatar-svgrepo.svg"
 import avatarShare from "../assets/avatar_share_button.png"
 
-// import '../index.css';
+
 
 
 export default  function Profile(){
