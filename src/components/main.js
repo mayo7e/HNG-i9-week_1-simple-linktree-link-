@@ -1,6 +1,7 @@
 import React from "react"
 import github from "../assets/github.png"
 import slack from "../assets/slack.png"
+import {Link} from "react-router-dom"
 
 
 
@@ -56,9 +57,8 @@ export default function Main (){
                                         <span>CSS tooltip showing up when your mouse over the link</span>
                                         </a>
                                 
-                                    
-                                
-                                
+        
+
 
                                 <a id="book__design" class="tooltip" target="_blank" rel="noreferrer" 
                                         href="https://books.zuri.team/design-rules">
@@ -68,6 +68,11 @@ export default function Main (){
                             
                                     
                               
+                                <a id="contact" class="tooltip"  rel="noreferrer" 
+                                        href="#0">
+                                        <Link target="_blank" to="/contact"><li>Contact us</li></Link>
+                                        <span>CSS tooltip showing up when your mouse over the link</span>
+                                        </a>
 
 
 
