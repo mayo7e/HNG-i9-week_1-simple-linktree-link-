@@ -1,8 +1,9 @@
 import React from "react"
+import Footer from "../components/footer.js"
 
 
 
-  const myName = "Mayowa"
+  const myName = "Mayowa Adeboye"
 
 
 export default function Contact (){
@@ -32,7 +33,7 @@ export default function Contact (){
 
 function handleSubmit(event) {
  
-  event.typeMessage = ""
+ 
   console.log(formData)
 }
 
@@ -42,35 +43,42 @@ function handleSubmit(event) {
     return (
      
        
-      <div class="container">
-      <h1>Contact Me</h1>
-        <h3>Hi there, contact me to ask me about anything you have in mind.</h3>
-              <form id="name_flex" >
-                          <label for="first_name" >First name </label>
-                          <input
-                              type="text"
-                              id = "first_name"
-                              placeholder="Enter your first name"
-                              onChange={handleChange}
-                              name="firstName" 
-                              value={formData.firstName}
-                              
-                          />
-                
-                 
-                          <label for="last_name" >Last name</label>
-                          <input
-                              type="text"
-                              id = "last_name"
-                              placeholder="Enter your last name"
-                              onChange={handleChange}
-                              name="lastName"
-                              value={formData.lastName}
-                          />
-                    </form>
-        
-          <form id="data_form" onSubmit={handleSubmit} >
-
+      // <div className="container">
+         <div className="contact__container">
+              <div className="contact_header">
+                  <h1>Contact Me</h1>
+                    <h3>Hi there, contact me to ask me about anything you have in mind.</h3>
+              </div>
+              <form onSubmit={handleSubmit}>
+                  <div className="name__container" >
+                          <div className="form_details"  >
+                                        <label for="first_name" >First name </label>
+                                        <input
+                                            type="text"
+                                            id = "first_name"
+                                            placeholder="Enter your first name"
+                                            onChange={handleChange}
+                                            name="firstName" 
+                                            value={formData.firstName}
+                                            required
+                                        />
+                          </div>
+                        
+                            <div className="form_details" >
+                                  <label for="last_name" >Last name</label>
+                                  <input
+                                      type="text"
+                                      id = "last_name"
+                                      placeholder="Enter your last name"
+                                      onChange={handleChange}
+                                      name="lastName"
+                                      value={formData.lastName}
+                                      required
+                                  />
+                           </div>
+                    </div>
+                  
+                    <div className="form_details"  >
                           <label for="email" >Email</label>
                           <input
                               type="email"
@@ -79,9 +87,11 @@ function handleSubmit(event) {
                               onChange={handleChange} 
                               name="email"  
                               value={formData.email}
+                              required
                           />
-                    
-                
+                    </div>
+
+                    <div className="form_details"  >
                           <label for="message" >Message</label>
                           <textarea
                               value={formData.message} 
@@ -92,26 +102,32 @@ function handleSubmit(event) {
                               name="typeMessage" 
                               rows="10"
                               cols="50"
+                              required
                           />
+                    </div>
                     
-                    
+                    <div className="form_checkbox_details"  >
                           <input
                               type="checkbox"
                               id = "isUsaData" 
                               onChange={handleChange}  
                               name="isUseData"
                               checked={formData.isUseData}
+                              required
                               
                           />
-                          <label for="checkbox" >You agree to prividing your data to {myName} who may contact you.</label>
-                    
-               <br /><br />
+                          <label for="checkbox" >You agree to providing your data to {myName} who may contact you.</label>
+                    </div>
+         
+                          
+                          <button id="btn__submit" >Send message</button>
+                    </form>
 
-                <button id="btn__submit" >Send message</button>
 
-
-          </form>
-        </div>
+        
+                    <Footer />
+          </div>
+        // </div>
         
       
     )

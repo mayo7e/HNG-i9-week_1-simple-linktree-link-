@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding:  0;
+    padding:0;
     font-size: 18px;
     height: 100vh;
     font-family: 'Inter', sans-serif;
@@ -274,72 +274,131 @@ footer_Sectiion_End
 
 
 
-.container{
-    position: absolute;
-    top: 10%;
-    left: 23%;
-    width: 50%;
-    }
-    
-    .text{
-    display: inline;
-    width: 100%;
-    }
-    
-    .read-or-hide{
-    color: rgb(192,192,192);
-    cursor: pointer;
-    }
-
-  
-    
-
     /* =====================
     Contact page
     ===================== */
 
-  
-
-
-form #first_name, form #last_name{
-  display:flex;
- 
-}
-
-h1{
- 
-  display: flex;
-  justify-content: 90%;
-  
+ h1{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 44px;
   letter-spacing: -0.02em;
-
-
   color: #101828;
  
 }
 
 h3{
-  display: flex;
-  justify-content: 90%;
-
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-
   color: #475467;
 
   
 }
 
 
-input[type=text],#email,  textarea {
+ .contact__container {
+  margin: 0 100px 140px;
+  flex-direction: column;
+  margin: 120px auto;
+  width: 50%;
+  gap: 48px;
+}
+
+
+.contact_header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact_header h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.contact_header h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--Gray-600);
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.name__container {
+  display: flex;
+  
+  gap: 20px;
+}
+
+.form_details{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.form_checkbox_details{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--Gray-500);
+}
+
+#btn__submit{ 
+  display: inline-block;
+  width: 100%; 
+  cursor: pointer; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 8px;
+  height: 48px;
+  background: #1570EF;
+  border: 1px solid #1570EF;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=text], 
+input[type=email] {
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+
+    padding: 10px 20px;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -349,6 +408,8 @@ input[type=text],#email,  textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
+  
 
 
 input::placeholder,
@@ -360,66 +421,99 @@ textarea::placeholder {
   line-height: 20px;
 }
 
-div.parentElement{
-  text-align: center;
-}
-#btn__submit{ 
-  display: inline-block;
-  width: 100%; 
-  cursor: pointer; 
 
 
-/* display: flex; */
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 12px 20px;
-gap: 8px;
 
-height: 48px;
-background: #1570EF;
-border: 1px solid #1570EF;
-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-border-radius: 8px;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  margin:0;
-  border-radius: 5px;
-  background-color: #fff;
-  padding: 80px;
-  padding-bottom: 0;
-
+@media screen and (max-width: 700px) {
   
-  text-align:center;
+  .contact__container {
+   
+    
+    gap: 48px;
+  }
 
-  min-height: 100vh; 
-  position: relative; 
+  .contact__header {
+    gap: 14px;
+  }
+
+  .contact__header h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .name__container {
+    display:block;
+    
+    gap: 24px;
+  }
+
+  .checkbox__container {
+    align-items: flex-start;
+  }
+
+  #footer_logo{
+ display: block;
+ align-self: flex-start;
+}
 }
 
-label{
+/* ==============
+NotFound
+=============== */
+
+.error_text{
+  /* display:flex;
+  flex-direction: row;
+  justify-content: center; */
+  margin: 60px;
+}
+
+
+.error_container p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* margin-top: 30px;
+    padding-left: 30px; */
+
+    color: #1570EF;
+}
+
+.not_exist{
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-
-
-  color: #344054;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #475467;
 }
 
+.error_container h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+
+    letter-spacing: -0.02em;
+    color: #101828;
+  }
+
+   button {
+
+    gap: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    padding : 12px;
+    margin-right: 8px;
+    border-radius: 4px;
+
+    color: #344054;
 
 
+   }
