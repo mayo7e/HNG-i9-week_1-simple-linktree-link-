@@ -4,20 +4,24 @@ import React from "react"
 
   const myName = "Mayowa"
 
+
 export default function Contact (){
+
     const [formData, setFormData] = React.useState(
       {
           firstName: "", 
           lastName: "", 
           email: "",
           typeMessage: "", 
-          isUseData: true,
+          isUseData: false,
           
       }
   )
 
   function handleChange(event) {
+    
     const {name, value, type, checked} = event.target
+    
     setFormData(prevFormData => {
         return {
             ...prevFormData,
@@ -28,6 +32,7 @@ export default function Contact (){
 
 function handleSubmit(event) {
  
+  event.typeMessage = ""
   console.log(formData)
 }
 
@@ -96,6 +101,7 @@ function handleSubmit(event) {
                               onChange={handleChange}  
                               name="isUseData"
                               checked={formData.isUseData}
+                              
                           />
                           <label for="checkbox" >You agree to prividing your data to {myName} who may contact you.</label>
                     
