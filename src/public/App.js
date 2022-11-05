@@ -9,7 +9,7 @@ import '../index.css';
 
 function App() {
   return (
-    <Router basename="hngi9_week_01-_linktree" >
+    <Router basename="/" >
      
         <Routes>
             <Route index path="/" element={<Home />} />
