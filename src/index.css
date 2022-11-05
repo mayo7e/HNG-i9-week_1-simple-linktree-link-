@@ -366,6 +366,7 @@ div.parentElement{
 #btn__submit{ 
   display: inline-block;
   width: 100%; 
+  cursor: pointer; 
 
 
 /* display: flex; */
@@ -422,19 +423,3 @@ label{
 
 
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [id*="container"] {
-    width: 80%;
-  }
-}
-
-
-@media only screen and (max-width: 768px) {
- 
-  [id*="footer_logo"] {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
