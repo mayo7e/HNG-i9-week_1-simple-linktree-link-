@@ -12,7 +12,7 @@ function App() {
     <Router basename="hngi9_week_01-_linktree" >
      
         <Routes>
-            <Route index path="" element={<Home />} />
+            <Route index path="/" element={<Home />} />
             <Route path= "/contact" element={<Contact />} />
             <Route path= "*" element={<NotFound />} />
 
