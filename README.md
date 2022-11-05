@@ -1,9 +1,65 @@
- <!-- <ul>
-                            <li> <a id="twitter_link"  rel="noreferrer"  href="https://twitter.com/MayowaWn">Twitter Link</a></li>
-                            <li> <a id="btn_zuri" target="_blank" rel="noreferrer"  href="https://training.zuri.team/">Zuri Teams</a></li>
-                            <li> <a id="books" target="_blank" rel="noreferrer"  href="https://twitter.com/MayowaWn">Zuri Books</a></li>
-                            
-                            <li> <a id="book_python" target="_blank" rel="noreferrer"  href="https://books.zuri.team/python-for-beginners?ref_id=mayowaade">Python Books</a></li>
-                            <li> <a id="pitch" target="_blank" rel="noreferrer"  href="https://background.zuri.team">Background Checks for coders</a></li>
-                            <li> <a id="book_design" target="_blank" rel="noreferrer"  href="https://books.zuri.team/design-rules">Design Books</a></li>
-                            </ul> -->
+<form onSubmit={handleSubmit} >
+                <section>
+                          <label for="first_name" >First name</label>
+                          <input
+                              type="text"
+                              id = "first_name"
+                              placeholder="Enter your first name"
+                              onChange={handleChange}
+                              name="firstName" 
+                              value={formData.firstName}
+                              
+                          />
+                    
+                          <label for="last_name" >Last name</label>
+                          <input
+                              type="text"
+                              id = "last_name"
+                              placeholder="Enter your last name"
+                              onChange={handleChange}
+                              name="lastName"
+                              value={formData.lastName}
+                          />
+                </section>
+                <section>
+                          <label for="email" >Email</label>
+                          <input
+                              type="email"
+                              id = "email" 
+                              placeholder="Enter your Email address" 
+                              onChange={handleChange} 
+                              name="email"  
+                              value={formData.email}
+                          />
+                    
+                </section>
+                <section>
+                          <label for="message" >Message</label>
+                          <textarea
+                              value={formData.message} 
+                              type="text"
+                              id = "message"
+                              placeholder="Send me a message and i'll re[ly ypu as soon as possible"
+                              onChange={handleChange} 
+                              name="typeMessage" 
+                              rows="10"
+                              cols="50"
+                          />
+                    
+                </section>
+                <section>
+                          <input
+                              type="checkbox"
+                              id = "isUsaData" 
+                              onChange={handleChange}  
+                              name="isUseData"
+                              checked={formData.isUseData}
+                          />
+                          <label for="checkbox" >You agree to prividing your data to {myName} who may contact you.</label>
+                    
+                </section>
+
+                <button id="btn__submit" >Send message</button>
+
+
+          </form>
