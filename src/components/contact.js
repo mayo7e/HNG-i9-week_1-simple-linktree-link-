@@ -35,10 +35,13 @@ function handleSubmit(event) {
 
 
     return (
-     <div>
-          <form onSubmit={handleSubmit} >
-                <section>
-                          <label for="first_name" >First name</label>
+     
+       
+      <div class="container">
+      <h1>Contact Me</h1>
+        <h3>Hi there, contact me to ask me about anything you have in mind.</h3>
+              <form id="name_flex" >
+                          <label for="first_name" >First name </label>
                           <input
                               type="text"
                               id = "first_name"
@@ -48,7 +51,8 @@ function handleSubmit(event) {
                               value={formData.firstName}
                               
                           />
-                    
+                
+                 
                           <label for="last_name" >Last name</label>
                           <input
                               type="text"
@@ -58,8 +62,10 @@ function handleSubmit(event) {
                               name="lastName"
                               value={formData.lastName}
                           />
-                </section>
-                <section>
+                    </form>
+        
+          <form id="data_form" onSubmit={handleSubmit} >
+
                           <label for="email" >Email</label>
                           <input
                               type="email"
@@ -70,8 +76,7 @@ function handleSubmit(event) {
                               value={formData.email}
                           />
                     
-                </section>
-                <section>
+                
                           <label for="message" >Message</label>
                           <textarea
                               value={formData.message} 
@@ -84,8 +89,7 @@ function handleSubmit(event) {
                               cols="50"
                           />
                     
-                </section>
-                <section>
+                    
                           <input
                               type="checkbox"
                               id = "isUsaData" 
@@ -95,14 +99,14 @@ function handleSubmit(event) {
                           />
                           <label for="checkbox" >You agree to prividing your data to {myName} who may contact you.</label>
                     
-                </section>
+               <br /><br />
 
                 <button id="btn__submit" >Send message</button>
 
 
           </form>
-
-     </div>
+        </div>
+        
       
     )
   }

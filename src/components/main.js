@@ -68,10 +68,9 @@ export default function Main (){
                             
                                     
                               
-                                <a id="contact" class="tooltip"  rel="noreferrer" 
+                                <a id="contact"   rel="noreferrer" 
                                         href="#0">
                                         <Link target="_blank" to="/contact"><li>Contact us</li></Link>
-                                        <span>CSS tooltip showing up when your mouse over the link</span>
                                         </a>
 
 

@@ -2,7 +2,7 @@
 
 import Profile from "./profile.js"
 import Main from "./main.js"
-import Footer from "./footer.js"
+// import Footer from "./footer.js"
 
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
         <div className="Home">
               <Profile />
               <Main />
-              <Footer />
+            
            
         </div>
     
